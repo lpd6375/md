@@ -430,7 +430,7 @@ class Projects(models.Model):
 
 
 class Regions(models.Model):
-    Regions_id = models.IntegerField(unique=True)
+    id = models.IntegerField(unique=True)
     name = models.CharField(max_length=20)
     parent_id = models.IntegerField()
     short_name = models.CharField(max_length=20, blank=True, null=True)
