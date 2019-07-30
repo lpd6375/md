@@ -15,14 +15,13 @@
         $(
             function () {
                 getData(chart);
-                setInterval(getData,60000);
             }
         );
 
         function getData() {
             $.ajax({
                 type: "GET",
-                url: "http://127.0.0.1:8000/demo/bar",
+                url: "http://127.0.0.1:8000/StudentInfo/cat_sum_cnt",
                 dataType: 'json',
                 success: function (result) {
                     chart.setOption(result.data);
