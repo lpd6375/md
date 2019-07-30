@@ -1,3 +1,5 @@
 *.conf
 *.sqlite3
 t.py
+*.doc
+*.pyc
