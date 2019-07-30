@@ -1,2 +1,2 @@
-.conf
-t.py
+*.conf
+*.sqlite3
