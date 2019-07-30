@@ -1,16 +1,21 @@
 import json
 from random import randrange
+import MySQLdb
 
 from django.http import HttpResponse
 from rest_framework.views import APIView
-from django.core import  serializers
 from pyecharts.charts import Bar
 from pyecharts import options as opts
 
 
 # Create your views here.
-from demo.models import Student
 
+def getsqlrun(sql):
+    conn = MySQLdb.connect(host='59.110.237.54',user='root',passwd='t00tDBMySQL',db='totte',port=3306)
+    cur = conn.cursor()
+    out = cur.execute(sql)
+    out
+    pass
 
 def response_as_json(data):
     json_str = json.dumps(data)
@@ -46,22 +51,15 @@ JsonError = json_error
 
 
 def bar_base() -> Bar:
-    getstudentcard()
     c = (
         Bar()
-        .add_xaxis(["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"])
-        .add_yaxis("商家A", [randrange(0, 100) for _ in range(6)])
-        .add_yaxis("商家B", [randrange(0, 100) for _ in range(6)])
-        .set_global_opts(title_opts=opts.TitleOpts(title="Bar-基本示例", subtitle="我是副标题"))
-        .dump_options()
+            .add_xaxis(["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"])
+            .add_yaxis("商家A", [randrange(0, 100) for _ in range(6)])
+            .add_yaxis("商家B", [randrange(0, 100) for _ in range(6)])
+            .set_global_opts(title_opts=opts.TitleOpts(title="Bar-基本示例", subtitle="我是副标题"))
+            .dump_options()
     )
     return c
-
-def getstudentcard():
-    students = Student.objects.filter(serial='S00427')
-    data = serializers.serialize("json",students)
-    print(data
-          )
 
 
 class ChartView(APIView):
@@ -71,4 +69,4 @@ class ChartView(APIView):
 
 class IndexView(APIView):
     def get(self, request, *args, **kwargs):
-        return HttpResponse(content=open("./templates/index.html",encoding='utf-8').read())
+        return HttpResponse(content=open("./templates/index.html", encoding='utf-8').read())
