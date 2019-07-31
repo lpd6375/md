@@ -153,5 +153,41 @@ def getcatenationrank(serial):
     print(relist)
 
 
-def getclassrank(serial):
+'''    '''
 
+
+def getclassrank(serial):
+    allrank = []
+    for item in (
+            'a.cate_one_number', 'a.cate_two_number', 'a.cate_three_number', 'a.cate_four_number', 'a.cate_five_number',
+            '(a.cate_one_number+a.cate_two_number+a.cate_three_number+a.cate_four_number+ a.cate_five_number)'):
+        sql = f"""SELECT
+            {item}        
+            FROM
+            student_extra a
+            WHERE
+            a.student_id IN (SELECT
+            stu_class_current.student_id
+            FROM
+            stu_class_current
+            WHERE
+            stu_class_current.class_id = (SELECT
+            stu_class_current.class_id
+            FROM
+            student ,
+            stu_class_current
+            WHERE
+            student.serial = '{serial}' AND
+            student.student_id = stu_class_current.student_id))  
+        """
+        cur = get_sql_done(sql)
+        seprank = []
+        for cr in cur:
+            seprank.append(cr[0])
+            seprank.sort(reverse=True)
+        allrank.append(seprank)
+    bcur = get5sumbase(serial)
+    blist = []
+    for isb in bcur:
+        blist = list(isb)
+    relist = [allrank[0].index(blist[0])+1,allrank[1].index(blist[1])+1,allrank[2].index(blist[2])+1, allrank[3].index(blist[3])+1,allrank[4].index(blist[4])+1 ,allrank[5].index(blist[5])+1 ]
