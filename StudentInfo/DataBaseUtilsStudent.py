@@ -70,7 +70,7 @@ def get_student_basic_info(serial) -> List:
     student ,
     stu_class ,
     stu_class_current
-    WHERE
+    WHERE/
     student.serial = '{serial}' AND
     student.student_id = stu_class_current.student_id AND
     stu_class_current.class_id = stu_class.class_id)) b
@@ -120,7 +120,7 @@ def get5sum(serial):
     print(json.dumps(json_data, ensure_ascii=False, indent=4))
 
 
-# 反回查询学生的各类卡 牌排名信息顺序为（1，2，3，4，5）
+# 返回查询学生的各类卡 牌排名信息顺序为（1，2，3，4，5）
 def getcatenationrank(serial):
     tlist = []
     listcatenationrank = []
@@ -153,9 +153,7 @@ def getcatenationrank(serial):
     print(relist)
 
 
-'''    '''
-
-
+# 得到一个学生的排名信息 顺序为1、2、3、4、5和汇总
 def getclassrank(serial):
     allrank = []
     for item in (
@@ -190,4 +188,7 @@ def getclassrank(serial):
     blist = []
     for isb in bcur:
         blist = list(isb)
+    # 最终结果是一个数组
     relist = [allrank[0].index(blist[0])+1,allrank[1].index(blist[1])+1,allrank[2].index(blist[2])+1, allrank[3].index(blist[3])+1,allrank[4].index(blist[4])+1 ,allrank[5].index(blist[5])+1 ]
+
+def get
