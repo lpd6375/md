@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="make new files">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tootchina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tootchina.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tootchina/DataBaseUtilsStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/tootchina/DataBaseUtilsStudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tootchina/DataBaseUtilsStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/DataBaseUtilsStudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tootchina/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tootchina/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +53,9 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TOOT\Desktop\tootchina\StudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\OperationInfo" />
@@ -93,6 +97,8 @@
       <workItem from="1564560068953" duration="119000" />
       <workItem from="1564561084297" duration="413000" />
       <workItem from="1564561557490" duration="4268000" />
+      <workItem from="1564574645975" duration="235000" />
+      <workItem from="1564576266860" duration="1034000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
