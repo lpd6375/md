@@ -77,7 +77,7 @@ def get5sumbase(serial) -> List:
 	student_extra.cate_three_number,
 	student_extra.cate_four_number,
 	student_extra.cate_five_number,
-	( student_extra.cate_one_number + student_extra.cate_two_number + student_extra.cate_three_number + student_extra.cate_four_number + student_extra.cate_five_number + student_extra.cate_one_number ) AS card_sum 
+	( student_extra.cate_one_number + student_extra.cate_two_number + student_extra.cate_three_number + student_extra.cate_four_number + student_extra.cate_five_number ) AS card_sum 
     FROM
 	student_extra,
 	student 

@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tootchina/sqltool.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampusInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampusInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OperationInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/OperationInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OperationInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/OperationInfo/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/StudentInfo/DataBaseUtilsStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/DataBaseUtilsStudent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,6 +105,10 @@
       <workItem from="1564561557490" duration="4268000" />
       <workItem from="1564574645975" duration="235000" />
       <workItem from="1564576266860" duration="4516000" />
+      <workItem from="1564627935865" duration="1602000" />
+      <workItem from="1564630616463" duration="7344000" />
+      <workItem from="1564644810818" duration="2915000" />
+      <workItem from="1564649933538" duration="3709000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -220,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564625865711</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update README and make another new file that shared by all app called sqltool.py">
+      <created>1564627357287</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1564627357287</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -266,6 +282,7 @@
     <MESSAGE value="three apis has been done commit for a little break" />
     <MESSAGE value="delete some dangerous items in settings file" />
     <MESSAGE value="test git command" />
-    <option name="LAST_COMMIT_MESSAGE" value="test git command" />
+    <MESSAGE value="update README and make another new file that shared by all app called sqltool.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README and make another new file that shared by all app called sqltool.py" />
   </component>
 </project>
