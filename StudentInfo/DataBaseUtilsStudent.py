@@ -1,27 +1,7 @@
-import configparser
 import json
 from typing import List
 
-import MySQLdb
-from MySQLdb.cursors import Cursor
-
-from tootchina import settings
-
-cf = configparser.ConfigParser()
-cf.read(settings.CONF_DIR)
-host = cf.get('client', "db_host")
-user = cf.get("client", "db_user")
-passwd = cf.get("client", "db_passwd")
-
-
-# 与数据库建立连接并执行传入的语句返回查询结果
-def get_sql_done(sql) -> Cursor:
-    conn = MySQLdb.connect(host=host, user=user, passwd=passwd, db='totte', port=3306, use_unicode=True, charset='utf8')
-    cur = conn.cursor()
-    cur.execute(sql)
-    cur.close()
-    conn.close()
-    return cur
+from tootchina.sqltool import get_sql_done
 
 
 def get_nation_rank() -> List:
@@ -120,7 +100,7 @@ def get5sum(serial):
     print(json.dumps(json_data, ensure_ascii=False, indent=4))
 
 
-# 返回查询学生的各类卡 牌排名信息顺序为（1，2，3，4，5）
+# 返回查询学生的各类卡牌排名信息顺序为（1，2，3，4，5）
 def getcatenationrank(serial):
     tlist = []
     listcatenationrank = []
@@ -153,7 +133,7 @@ def getcatenationrank(serial):
     print(relist)
 
 
-# 得到一个学生的排名信息 顺序为1、2、3、4、5和汇总
+# 得到一个学生的排名信息顺序为1、2、3、4、5和汇总
 def getclassrank(serial):
     allrank = []
     for item in (
@@ -191,4 +171,42 @@ def getclassrank(serial):
     # 最终结果是一个数组
     relist = [allrank[0].index(blist[0])+1,allrank[1].index(blist[1])+1,allrank[2].index(blist[2])+1, allrank[3].index(blist[3])+1,allrank[4].index(blist[4])+1 ,allrank[5].index(blist[5])+1 ]
 
-def get
+# 得到一个学生在学校里的排名信息顺序为1、2、3、4、5和汇总
+def getcampusrank(serial):
+    allrank = []
+    for item in (
+            "b.cate_one_number", "b.cate_two_number", "b.cate_three_number", "b.cate_four_number", "cate_five_number",
+            "(b.cate_one_number+b.cate_two_number+b.cate_three_number+b.cate_four_number+b.cate_five_number)"):
+        sql = f"""SELECT distinct  {item} FROM 
+        (SELECT
+        student.student_id as student_id,
+        student.`name`,
+        student.serial,
+        student.campus_id
+        FROM
+        student
+        WHERE
+        student.campus_id NOT IN ( '9a0b75a5-cb17-4f92-965b-816a93b606cd', '8c8c79d0-ce80-421d-abe8-31dc446b3371' )  AND
+        student.`name` NOT LIKE '试听%') oo
+        left join student_extra b
+        on oo.student_id=b.student_id WHERE oo.campus_id=(SELECT
+        student.campus_id
+        FROM
+        student
+        WHERE
+        student.serial = '{serial}')"""
+        curout = get_sql_done(sql)
+        singlecnt = []
+        for i in curout:
+            if i[0] != None:
+                # print(i[0])
+                singlecnt.append(i[0])
+        singlecnt.sort(reverse=True)
+        allrank.append(singlecnt)
+    stusore = get5sumbase(serial)
+    li = []
+    for ite in stusore:
+        li = list(ite)
+    relist =[allrank[0].index(li[0])+1,allrank[1].index(li[1])+1,allrank[2].index(li[2])+1,allrank[3].index(li[3])+1,allrank[4].index(li[4])+1,allrank[5].index(li[5])+1,]
+
+
