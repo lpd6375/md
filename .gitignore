@@ -1,7 +1,7 @@
 *.conf
 *.sqlite3
-t.py
+./p.py
+./t.py
 *.doc
 *.pyc
-tt.py
 *.log
