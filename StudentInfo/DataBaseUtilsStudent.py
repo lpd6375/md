@@ -60,11 +60,15 @@ def get_student_basic_info(serial) -> List:
     stu_class.campus_id = campus.campus_id AND
     student.serial = '{serial}'"""
     cur = get_sql_done(sql)
-    row_headers = [x[0] for x in cur.description]
-    json_data = []
-    for result in cur:
-        json_data.append(dict(zip(row_headers, result)))
-    print(json.dumps(json_data, ensure_ascii=False, indent=4))
+    li = []
+    for item in cur:
+        li = item
+    return li
+    # row_headers = [x[0] for x in cur.description]
+    # json_data = []
+    # for result in cur:
+    #     json_data.append(dict(zip(row_headers, result)))
+    # print(json.dumps(json_data, ensure_ascii=False, indent=4))
 
 
 
@@ -130,7 +134,7 @@ def getcatenationrank(serial):
     relist = [tlist[0].index(listcatenationrank[0]) + 1, tlist[1].index(listcatenationrank[1]) + 1,
               tlist[2].index(listcatenationrank[2]) + 1, tlist[3].index(listcatenationrank[3]) + 1,
               tlist[4].index(listcatenationrank[4]) + 1, nationranklist.index(listcatenationrank[5]) + 1]
-    print(relist)
+    return relist
 
 
 # 得到一个学生的排名信息顺序为1、2、3、4、5和汇总
@@ -170,6 +174,7 @@ def getclassrank(serial):
         blist = list(isb)
     # 最终结果是一个数组
     relist = [allrank[0].index(blist[0])+1,allrank[1].index(blist[1])+1,allrank[2].index(blist[2])+1, allrank[3].index(blist[3])+1,allrank[4].index(blist[4])+1 ,allrank[5].index(blist[5])+1 ]
+    return relist
 
 # 得到一个学生在学校里的排名信息顺序为1、2、3、4、5和汇总
 def getcampusrank(serial):
@@ -208,5 +213,6 @@ def getcampusrank(serial):
     for ite in stusore:
         li = list(ite)
     relist =[allrank[0].index(li[0])+1,allrank[1].index(li[1])+1,allrank[2].index(li[2])+1,allrank[3].index(li[3])+1,allrank[4].index(li[4])+1,allrank[5].index(li[5])+1,]
+    return relist
 
 
