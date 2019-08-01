@@ -3,7 +3,7 @@
 
 - Django 2.2
 - Python 3.7
-- PyEcharts
+- Echarts
 - BootStrap
 - Mysql 5.7
 
