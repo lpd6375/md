@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/student.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/tootchina.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tootchina.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentInfo/DataBaseUtilsStudent.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/DataBaseUtilsStudent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +49,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/StudentInfo" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,6 +102,8 @@
       <workItem from="1564630616463" duration="7344000" />
       <workItem from="1564644810818" duration="2915000" />
       <workItem from="1564649933538" duration="3709000" />
+      <workItem from="1564725245376" duration="965000" />
+      <workItem from="1564726232600" duration="6347000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -241,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564666596201</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="all interface passed test everyone could return a json">
+      <created>1564717879308</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1564717879309</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TodoView">
@@ -289,6 +293,7 @@
     <MESSAGE value="test git command" />
     <MESSAGE value="update README and make another new file that shared by all app called sqltool.py" />
     <MESSAGE value="all student info api has done tomorrow all the student info related will be done." />
-    <option name="LAST_COMMIT_MESSAGE" value="all student info api has done tomorrow all the student info related will be done." />
+    <MESSAGE value="all interface passed test everyone could return a json" />
+    <option name="LAST_COMMIT_MESSAGE" value="all interface passed test everyone could return a json" />
   </component>
 </project>
