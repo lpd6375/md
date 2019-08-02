@@ -26,8 +26,8 @@ def get_nation_rank() -> List:
 
 
 # 获取学生个人信息，姓名，学号，班级，校区以及班级人数
-def get_student_basic_info(serial) -> List:
-    serial = 'S01840'
+def get_student_basic_info(request) -> List:
+    serial = request.GET.get('serial')
     sql = f"""SELECT
     student.`name`,
     student.serial,
@@ -50,7 +50,7 @@ def get_student_basic_info(serial) -> List:
     student ,
     stu_class ,
     stu_class_current
-    WHERE/
+    WHERE
     student.serial = '{serial}' AND
     student.student_id = stu_class_current.student_id AND
     stu_class_current.class_id = stu_class.class_id)) b
@@ -71,9 +71,9 @@ def get_student_basic_info(serial) -> List:
     # print(json.dumps(json_data, ensure_ascii=False, indent=4))
 
 
-
 # 得到学生五类卡牌及总数顺序为1，2，3，4，5，总数
-def get5sumbase(serial) -> List:
+def get5sumbase(request) -> List:
+    serial = request.GET.get('serial')
     sql = f"""
     SELECT
 	student_extra.cate_one_number,
@@ -93,10 +93,10 @@ def get5sumbase(serial) -> List:
     return cur
 
 
-
 # 返回学生五类卡牌数量及总量
-def get5sum(serial):
-    cur = get5sumbase(serial)
+def get5sum(request):
+    serial = request.GET.get('serial')
+    cur = get5sumbase(request)
     row_headers = [x[0] for x in cur.description]
     json_data = []
     for result in cur:
@@ -104,8 +104,9 @@ def get5sum(serial):
     print(json.dumps(json_data, ensure_ascii=False, indent=4))
 
 
-# 返回查询学生的各类卡牌排名信息顺序为（1，2，3，4，5）
-def getcatenationrank(serial):
+# 返回查询学生的各类卡牌全国排名信息顺序为（1，2，3，4，5）
+def getcatenationrank(request):
+    serial = request.GET.get('serial')
     tlist = []
     listcatenationrank = []
     for cate in ('cate_one_number', 'cate_two_number', 'cate_three_number', 'cate_four_number', 'cate_five_number'):
@@ -127,7 +128,7 @@ def getcatenationrank(serial):
         for i in cur:
             seplist.append(i[0])
         tlist.append(seplist)
-    out = get5sumbase(serial)
+    out = get5sumbase(request)
     for item in out:
         listcatenationrank = item
     nationranklist = get_nation_rank()
@@ -137,8 +138,9 @@ def getcatenationrank(serial):
     return relist
 
 
-# 得到一个学生的排名信息顺序为1、2、3、4、5和汇总
-def getclassrank(serial):
+# 得到一个学生的班级排名信息顺序为1、2、3、4、5和汇总排名
+def getclassrank(request):
+    serial = request.GET.get('serial')
     allrank = []
     for item in (
             'a.cate_one_number', 'a.cate_two_number', 'a.cate_three_number', 'a.cate_four_number', 'a.cate_five_number',
@@ -168,16 +170,23 @@ def getclassrank(serial):
             seprank.append(cr[0])
             seprank.sort(reverse=True)
         allrank.append(seprank)
-    bcur = get5sumbase(serial)
+    bcur = get5sumbase(request)
     blist = []
     for isb in bcur:
         blist = list(isb)
+        print(isb)
     # 最终结果是一个数组
-    relist = [allrank[0].index(blist[0])+1,allrank[1].index(blist[1])+1,allrank[2].index(blist[2])+1, allrank[3].index(blist[3])+1,allrank[4].index(blist[4])+1 ,allrank[5].index(blist[5])+1 ]
+    print(blist)
+    print(allrank)
+    relist = [allrank[0].index(blist[0]) + 1, allrank[1].index(blist[1]) + 1, allrank[2].index(blist[2]) + 1,
+              allrank[3].index(blist[3]) + 1, allrank[4].index(blist[4]) + 1, allrank[5].index(blist[5]) + 1]
+
     return relist
 
-# 得到一个学生在学校里的排名信息顺序为1、2、3、4、5和汇总
-def getcampusrank(serial):
+
+# 得到一个学生在学校里的排名信息顺序为1、2、3、4、5和汇总排名
+def getcampusrank(request):
+    serial = request.GET.get('serial')
     allrank = []
     for item in (
             "b.cate_one_number", "b.cate_two_number", "b.cate_three_number", "b.cate_four_number", "cate_five_number",
@@ -208,11 +217,10 @@ def getcampusrank(serial):
                 singlecnt.append(i[0])
         singlecnt.sort(reverse=True)
         allrank.append(singlecnt)
-    stusore = get5sumbase(serial)
+    stusore = get5sumbase(request)
     li = []
     for ite in stusore:
         li = list(ite)
-    relist =[allrank[0].index(li[0])+1,allrank[1].index(li[1])+1,allrank[2].index(li[2])+1,allrank[3].index(li[3])+1,allrank[4].index(li[4])+1,allrank[5].index(li[5])+1,]
+    relist = [allrank[0].index(li[0]) + 1, allrank[1].index(li[1]) + 1, allrank[2].index(li[2]) + 1,
+              allrank[3].index(li[3]) + 1, allrank[4].index(li[4]) + 1, allrank[5].index(li[5]) + 1, ]
     return relist
-
-

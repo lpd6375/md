@@ -54,7 +54,7 @@ JsonError = json_error
 
 class Card2View(APIView):
     def get(self, request, *args, **kwargs):
-        cur = get5sumbase('S00494')
+        cur = get5sumbase(request)
         li = []
         for i in cur:
             li = i
@@ -64,29 +64,29 @@ class Card2View(APIView):
 
 class BaseInfo(APIView):
     def get(self, request, *args, **kwargs):
-        info = get_student_basic_info()
+        info = get_student_basic_info(request)
         return JsonResponse(info)
 
 
 class NationRank(APIView):
     def get(self, request, *args, **kwargs):
-        info = getcatenationrank()
+        info = getcatenationrank(request)
         return JsonResponse(info)
 
 
 class ClassRank(APIView):
     def get(self, request, *args, **kwargs):
-        info = getclassrank()
+        info = getclassrank(request)
         return JsonResponse(info)
 
 
 
 class CampusRank(APIView):
     def get(self, request, *args, **kwargs):
-            info = getcampusrank()
-            return info
+            info = getcampusrank(request)
+            return JsonResponse(info)
 
 
 class IndexView(APIView):
     def get(self, request, *args, **kwargs):
-        return HttpResponse(content=open("./templates/index.html", encoding='utf8').read())
+        return HttpResponse(content=open("./templates/student.html", encoding='utf8').read())

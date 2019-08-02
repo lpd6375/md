@@ -1,104 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>学生信息展示页面</title>
-    <script src="https://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
+        * {
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        .header {
+            height: 100px;
+        }
+
+        .clearfix::before {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+
+        .clearfix::after {
+            content: ' ';
+            display: table;
+            clear: both;
+        }
+
+        .pull-left {
+            float: left;
+        }
+
+        .left {
+            width: 80%;
+        }
+
+        .right {
+            width: 20%;
+            height: 500px;
+        }
+
+        .left .item {
+            width: 50%;
+            height: 250px;
+        }
+
+        .inner-box {
+            width: 600px;
+            margin: 100px auto;
+        }
+
+        .inner-box .item {
+            height: 200px;
+            width: 50%;
+        }
+    </style>
 </head>
 <body>
-<div id="bar" style="width:500px; height:300px;"></div>
-<script>
-    var myChart = echarts.init(document.getElementById('bar'), 'white', {renderer: 'canvas'});
-    $(
-        function () {
-            dd = getData();
-        }
-    );
-
-    function getData() {
-        var dd;
-        $.ajax({
-            type: "GET",
-            url: "http://127.0.0.1:8000/StudentInfo/cat_sum_cnt",
-            dataType: 'json',
-            success: function (result) {
-                dd = result.data;
-                console.log(dd);
-                da1 = [];
-                for (var i = 0; i <= dd.length - 1; i++) {
-                    if (i == 0 || i == 5) {
-                        da1[i] = 0
-                    } else {
-                        da1[i] = da1[i - 1] + dd[i - 1]
-                    }
-                }
-                da1;
-                var option = {
-                    title: {
-                        text: '学生个人卡牌信息',
-                    },
-                    tooltip: {
-                        trigger: 'axis',
-                        axisPointer: {
-                            type: 'shadow'
-                        },
-                        formatter: function (params) {
-                            var tar = params[1];
-                            return tar.name + '<br/>' + tar.seriesName + ' : ' + tar.value;
-                        }
-                    },
-                    grid: {
-                        left: '3%',
-                        right: '4%',
-                        bottom: '3%',
-                        containLabel: true
-                    },
-                    xAxis: {
-                        type: 'category',
-                        splitLine: {show: false},
-                        data: ['知识获取', '实践能力', '思维能力', '个体', '社会', '卡牌总数']
-                    },
-                    yAxis: {
-                        type: 'value'
-                    },
-                    series: [
-                        {
-                            name: '辅助',
-                            type: 'bar',
-                            stack: '总数',
-                            itemStyle: {
-                                normal: {
-                                    barBorderColor: 'rgba(0,0,0,0)',
-                                    color: 'rgba(0,0,0,0)'
-                                },
-                                emphasis: {
-                                    barBorderColor: 'rgba(0,0,0,0)',
-                                    color: 'rgba(0,0,0,0)'
-                                }
-                            },
-                            data: da1
-                        },
-                        {
-                            name: '卡牌数',
-                            type: 'bar',
-                            stack: '总数',
-                            label: {
-                                normal: {
-                                    show: true,
-                                    position: 'inside'
-                                }
-                            },
-                            data: dd
-                        }
-                    ]
-                };
-                myChart.setOption(option);
-
-            }
-        });
-    }
-</script>
+<div class="container">
+    <div class="inner-box clearfix">
+        <div class="item pull-left"></div>
+        <div class="item pull-left"></div>
+        <div class="item pull-left"></div>
+        <div class="item pull-left"></div>
+    </div>
+</div>
 </body>
 </html>
