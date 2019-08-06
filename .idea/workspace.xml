@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/student.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/student.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -49,18 +49,19 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/StudentInfo" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TOOT\Desktop\tootchina\StudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\OperationInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getTeacherInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getStudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getOperationInfo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TOOT\Desktop\tootchina\CampusInfo" />
+      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -103,7 +104,13 @@
       <workItem from="1564644810818" duration="2915000" />
       <workItem from="1564649933538" duration="3709000" />
       <workItem from="1564725245376" duration="965000" />
-      <workItem from="1564726232600" duration="6347000" />
+      <workItem from="1564726232600" duration="6593000" />
+      <workItem from="1564741686763" duration="712000" />
+      <workItem from="1564967049184" duration="2260000" />
+      <workItem from="1564982003899" duration="758000" />
+      <workItem from="1564984711599" duration="1281000" />
+      <workItem from="1564988057997" duration="8143000" />
+      <workItem from="1565054154282" duration="559000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -245,7 +252,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564717879309</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="quite ugly because there is no beautifying">
+      <created>1564732662558</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564732662558</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TodoView">
@@ -294,6 +308,18 @@
     <MESSAGE value="update README and make another new file that shared by all app called sqltool.py" />
     <MESSAGE value="all student info api has done tomorrow all the student info related will be done." />
     <MESSAGE value="all interface passed test everyone could return a json" />
-    <option name="LAST_COMMIT_MESSAGE" value="all interface passed test everyone could return a json" />
+    <MESSAGE value="quite ugly because there is no beautifying" />
+    <option name="LAST_COMMIT_MESSAGE" value="quite ugly because there is no beautifying" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/t.py</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
