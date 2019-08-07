@@ -19,6 +19,7 @@ def getcardname() -> List:
     return lim
 
 
+# 获取老师基本信息
 def getteacherbasicinfo(request):
     serial = request.Get.get("serial")
     sql = f"""
@@ -37,10 +38,6 @@ def getteacherbasicinfo(request):
     for item in cur:
         li = item
     print(li)
-
-
-def getteachersallcourse():
-    pass
 
 
 # 获取老师卡牌明细，返回一个三维列表
@@ -69,7 +66,8 @@ def getteachercard(quest):
     return lii
 
 
-def getteacherclazz(quest)->List:
+# 获取老师教授的班级
+def getteacherclazz(quest) -> List:
     serial = quest.GET.get("serail")
     sql = f"""
     SELECT DISTINCT
@@ -100,14 +98,26 @@ def getteacherclazz(quest)->List:
     return tlist
 
 
+# 获取老师教授的课
+def getteachercourse(quest) -> List:
+    serial = quest.GET.get("serial")
+    sql = f"""
+    SELECT DISTINCT
+    course_extra.course_id,
+    course_extra.course_name
+    FROM
+    student_card ,
+    course_extra
+    WHERE
+    student_card.course_id = course_extra.course_id AND
+    student_card.employee_id = ( SELECT employee.employee_id FROM employee WHERE employee.serial = ( '{serial}' ) )"""
+    li = []
+    cur = get_sql_done(sql)
+    for i in cur:
+        li.append(list(i))
+    cname = []
 
-def getteachercourse(quest)->List:
-    serail = quest.GET.get("serial")
-    sql = """
-    
-    
-    """
-
-
-    pass
-
+    for ite in li:
+        if ite[1] not in cname:
+            cname.append(ite[1])
+    return cname

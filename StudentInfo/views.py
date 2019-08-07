@@ -80,7 +80,6 @@ class ClassRank(APIView):
         return JsonResponse(info)
 
 
-
 class CampusRank(APIView):
     def get(self, request, *args, **kwargs):
             info = getcampusrank(request)

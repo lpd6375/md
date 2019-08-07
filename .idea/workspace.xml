@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="start to complete teacher info query">
+    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +112,8 @@
       <workItem from="1564984711599" duration="1281000" />
       <workItem from="1564988057997" duration="8143000" />
       <workItem from="1565054154282" duration="3483000" />
-      <workItem from="1565072697525" duration="5015000" />
+      <workItem from="1565072697525" duration="5091000" />
+      <workItem from="1565148561766" duration="2904000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -267,7 +269,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565054757678</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="getteacherclazz api occurs some problems">
+      <created>1565082218560</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1565082218560</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView">
@@ -318,7 +327,8 @@
     <MESSAGE value="all interface passed test everyone could return a json" />
     <MESSAGE value="quite ugly because there is no beautifying" />
     <MESSAGE value="start to complete teacher info query" />
-    <option name="LAST_COMMIT_MESSAGE" value="start to complete teacher info query" />
+    <MESSAGE value="getteacherclazz api occurs some problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="getteacherclazz api occurs some problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
