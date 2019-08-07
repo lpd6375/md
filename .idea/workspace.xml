@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CampusInfo/campusquery.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampusInfo/doteacherquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/tootchina/doteacherquery.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,16 +53,17 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TOOT\Desktop\tootchina\tootchina" />
+      <recent name="C:\Users\TOOT\Desktop\tootchina\CampusInfo" />
+      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TOOT\Desktop\tootchina\StudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\OperationInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getTeacherInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getStudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getOperationInfo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\TOOT\Desktop\tootchina\CampusInfo" />
-      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,7 +114,9 @@
       <workItem from="1564988057997" duration="8143000" />
       <workItem from="1565054154282" duration="3483000" />
       <workItem from="1565072697525" duration="5091000" />
-      <workItem from="1565148561766" duration="2904000" />
+      <workItem from="1565148561766" duration="3946000" />
+      <workItem from="1565157758669" duration="1614000" />
+      <workItem from="1565160076755" duration="965000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -276,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565082218560</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="teacher API has done">
+      <created>1565154909028</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1565154909028</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TodoView">
@@ -328,7 +338,8 @@
     <MESSAGE value="quite ugly because there is no beautifying" />
     <MESSAGE value="start to complete teacher info query" />
     <MESSAGE value="getteacherclazz api occurs some problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="getteacherclazz api occurs some problems" />
+    <MESSAGE value="teacher API has done" />
+    <option name="LAST_COMMIT_MESSAGE" value="teacher API has done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
