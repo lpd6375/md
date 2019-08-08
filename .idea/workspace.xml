@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="cmmit again for test">
-      <change afterPath="$PROJECT_DIR$/templates/campus.html" afterDir="false" />
+    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CampusInfo/campusquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/campusquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampusInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CampusInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/campus.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/campus.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +123,7 @@
       <workItem from="1565160076755" duration="6715000" />
       <workItem from="1565226543104" duration="650000" />
       <workItem from="1565250456157" duration="2730000" />
-      <workItem from="1565253229443" duration="1924000" />
+      <workItem from="1565253229443" duration="2551000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -319,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565254628009</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="prepare for campus info process">
+      <created>1565255305547</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1565255305547</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +377,8 @@
     <MESSAGE value="campus API done about to write front end code tomorrow and after day" />
     <MESSAGE value="alter env to unbuntu so, made some files to transfer" />
     <MESSAGE value="cmmit again for test" />
-    <option name="LAST_COMMIT_MESSAGE" value="cmmit again for test" />
+    <MESSAGE value="prepare for campus info process" />
+    <option name="LAST_COMMIT_MESSAGE" value="prepare for campus info process" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

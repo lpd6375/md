@@ -5,8 +5,7 @@ from StudentInfo.DataBaseUtilsStudent import get5sumbase, get_student_basic_info
     getcampusrank
 from utils.jsonutil import json_response, json_error
 
-JsonResponse = json_response
-JsonError = json_error
+
 # def bar_base() -> Bar:
 #     c = (
 #         Bar()
