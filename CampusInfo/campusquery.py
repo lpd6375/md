@@ -27,8 +27,8 @@ def getcampusnsn() -> List:
     return li
 
 
-# 获取校区基本信息学生人数、卡牌总数、卡牌学生平均数（不分大类）。只返回学生ID和对应的卡牌总数，相关计算同前是端进行。
-# [student_is,nrank,1,2,3,4,5] 列表结构
+# 获取校区基本信息学生人数、卡牌总数、卡牌学生平均数（不分大类）。只返回学生ID和对应的卡牌总数，相关计算同前端进行。
+# [student_i,nrank,1,2,3,4,5] 列表结构
 def getcampusbasicinfo(quest) -> List:
     campus_id = quest.GET.get("campus_id")
     sql = f"""SELECT
@@ -55,8 +55,3 @@ def getcampusbasicinfo(quest) -> List:
     for i in cur:
         li.append(list(i))
     return li
-
-
-# TODO:
-#     1.完成校区相关信息的展示包括学生数量、学生人数分数布、学生全国排名情况
-#     2.校区人数排名什么的，放到前端去处理这里把用到的给传过去就行了。
