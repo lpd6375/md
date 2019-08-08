@@ -24,20 +24,21 @@ def getteacherbasicinfo(request):
     serial = request.Get.get("serial")
     sql = f"""
     SELECT
-    employee.`name`,
-    employee.serial,
-    campus.campus_name
+        employee.`name`,
+        employee.serial,
+        SUBSTRING_INDEX( campus.campus_name, "（",1 ) campus_name,
+        SUBSTR( campus.campus_name FROM - 6 FOR 5 ) campus_serial 
     FROM
-    employee ,
-    campus
+        employee,
+        campus 
     WHERE
-    employee.campus_id = campus.campus_id AND
-    employee.serial = '{serial}'
+        employee.campus_id = campus.campus_id 
+        AND employee.serial =  '{serial}'
     """
     cur = get_sql_done(sql)
     for item in cur:
         li = item
-    print(li)
+    return list(li)
 
 
 # 获取老师卡牌明细，返回一个三维列表
@@ -59,7 +60,7 @@ def getteachercard(quest):
     ORDER BY card_id DESC
     """
     cur = get_sql_done(sql)
-    # 用于生成固定格式且固定长度的列表,目前缺少一个卡牌名称参数问题。
+    # 用于生成固定格式且固定长度的列表
     lii = getcardname()
     for item in cur:
         lii[item[2] - 1] = list(item)

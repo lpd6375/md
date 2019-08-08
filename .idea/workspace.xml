@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tootchina.rar" afterDir="false" />
+    <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="alter env to unbuntu so, made some files to transfer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherInfo/doteacherquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherInfo/doteacherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TeacherInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherInfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/teacher.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/teacher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tootchina/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/tootchina/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/jsonutil.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/jsonutil.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,8 +33,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -49,21 +54,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/StudentInfo" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\TOOT\Desktop\tootchina\tootchina" />
-      <recent name="C:\Users\TOOT\Desktop\tootchina\CampusInfo" />
-      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\TOOT\Desktop\tootchina\StudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\OperationInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getTeacherInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getStudentInfo" />
       <recent name="C:\Users\TOOT\Desktop\tootchina\getOperationInfo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\TOOT\Desktop\tootchina\TeacherInfo" />
+      <recent name="C:\Users\TOOT\Desktop\tootchina\tootchina" />
+      <recent name="C:\Users\TOOT\Desktop\tootchina\CampusInfo" />
+      <recent name="C:\Users\lpd0155\Desktop\tootchina\StudentInfo" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -117,7 +123,9 @@
       <workItem from="1565148561766" duration="3946000" />
       <workItem from="1565157758669" duration="1614000" />
       <workItem from="1565160076755" duration="6715000" />
-      <workItem from="1565226543104" duration="435000" />
+      <workItem from="1565226543104" duration="650000" />
+      <workItem from="1565250456157" duration="2730000" />
+      <workItem from="1565253229443" duration="1228000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -301,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565165637237</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="alter env to unbuntu so, made some files to transfer">
+      <created>1565227014034</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1565227014034</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +363,8 @@
     <MESSAGE value="teacher API has done" />
     <MESSAGE value="campus api design draft" />
     <MESSAGE value="campus API done about to write front end code tomorrow and after day" />
-    <option name="LAST_COMMIT_MESSAGE" value="campus API done about to write front end code tomorrow and after day" />
+    <MESSAGE value="alter env to unbuntu so, made some files to transfer" />
+    <option name="LAST_COMMIT_MESSAGE" value="alter env to unbuntu so, made some files to transfer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
