@@ -21,7 +21,7 @@ def getcardname() -> List:
 
 # 获取老师基本信息
 def getteacherbasicinfo(request):
-    serial = request.Get.get("serial")
+    serial = request.GET.get("serial")
     sql = f"""
     SELECT
         employee.`name`,
@@ -69,7 +69,7 @@ def getteachercard(quest):
 
 # 获取老师教授的班级
 def getteacherclazz(quest) -> List:
-    serial = quest.GET.get("serail")
+    serial = quest.GET.get("serial")
     sql = f"""
     SELECT DISTINCT
     stu_class_current.class_id,
@@ -90,12 +90,10 @@ def getteacherclazz(quest) -> List:
     stu_class_current.class_id = stu_class.class_id
     ORDER BY num"""
     cur = get_sql_done(sql)
-    # alist = []
     tlist = []
     for i in cur:
-        # alist.append(list(i)[1])
         tlist.append(list(i)[:2])
-
+    print(type(tlist))
     return tlist
 
 

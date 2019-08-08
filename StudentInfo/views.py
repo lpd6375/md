@@ -21,6 +21,10 @@ from utils.jsonutil import json_response, json_error
 #     def get(self, request, *args, **kwargs):
 #         return JsonResponse(json.loads(bar_base()))
 
+JsonResponse = json_response
+JsonError = json_error
+
+
 
 class Card2View(APIView):
     def get(self, request, *args, **kwargs):
