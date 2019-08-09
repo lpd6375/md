@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CampusInfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/CampusInfo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentInfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/StudentInfo/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TeacherInfo/doteacherquery.py" beforeDir="false" afterPath="$PROJECT_DIR$/TeacherInfo/doteacherquery.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API" beforeDir="false" afterPath="$PROJECT_DIR$/API" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +120,8 @@
       <workItem from="1565160076755" duration="6715000" />
       <workItem from="1565226543104" duration="650000" />
       <workItem from="1565250456157" duration="2730000" />
-      <workItem from="1565253229443" duration="5606000" />
+      <workItem from="1565253229443" duration="5735000" />
+      <workItem from="1565312241037" duration="839000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -335,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565256124182</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="student teacher API document has done.">
+      <created>1565259013676</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1565259013676</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,7 +365,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="run sql directly without django models" />
     <MESSAGE value="delete test file which is added carelessly" />
     <MESSAGE value="EDIT SOME FILELS" />
     <MESSAGE value="test" />
@@ -385,7 +389,8 @@
     <MESSAGE value="cmmit again for test" />
     <MESSAGE value="prepare for campus info process" />
     <MESSAGE value="all api done,all front end ready to complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="all api done,all front end ready to complete" />
+    <MESSAGE value="student teacher API document has done." />
+    <option name="LAST_COMMIT_MESSAGE" value="student teacher API document has done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
