@@ -23,9 +23,9 @@ CONF_DIR = os.path.join(BASE_DIR,"db.conf")
 SECRET_KEY = '+4jl!s$+jpc8=8sa70-zt%yjf&*vv7&c*hg#3qjhruwe_&5%b5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 

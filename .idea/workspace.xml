@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/API" beforeDir="false" afterPath="$PROJECT_DIR$/API" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tootchina/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tootchina/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,7 +50,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -120,7 +121,7 @@
       <workItem from="1565226543104" duration="650000" />
       <workItem from="1565250456157" duration="2730000" />
       <workItem from="1565253229443" duration="5735000" />
-      <workItem from="1565312241037" duration="1059000" />
+      <workItem from="1565312241037" duration="1927000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -346,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565313179408</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="minor revision">
+      <created>1565313312848</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1565313312848</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +379,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EDIT SOME FILELS" />
     <MESSAGE value="test" />
     <MESSAGE value="modified some file" />
     <MESSAGE value="test file filter" />
@@ -396,7 +403,8 @@
     <MESSAGE value="all api done,all front end ready to complete" />
     <MESSAGE value="student teacher API document has done." />
     <MESSAGE value="API doc is done." />
-    <option name="LAST_COMMIT_MESSAGE" value="API doc is done." />
+    <MESSAGE value="minor revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor revision" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
