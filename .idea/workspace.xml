@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bd92c57-98e6-4739-a797-ca3cf867e759" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API" beforeDir="false" afterPath="$PROJECT_DIR$/API" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -121,7 +120,7 @@
       <workItem from="1565226543104" duration="650000" />
       <workItem from="1565250456157" duration="2730000" />
       <workItem from="1565253229443" duration="5735000" />
-      <workItem from="1565312241037" duration="839000" />
+      <workItem from="1565312241037" duration="1059000" />
     </task>
     <task id="LOCAL-00001" summary="add files">
       <created>1564394654184</created>
@@ -340,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565259013676</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="API doc is done.">
+      <created>1565313179408</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1565313179408</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +371,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="delete test file which is added carelessly" />
     <MESSAGE value="EDIT SOME FILELS" />
     <MESSAGE value="test" />
     <MESSAGE value="modified some file" />
@@ -390,7 +395,8 @@
     <MESSAGE value="prepare for campus info process" />
     <MESSAGE value="all api done,all front end ready to complete" />
     <MESSAGE value="student teacher API document has done." />
-    <option name="LAST_COMMIT_MESSAGE" value="student teacher API document has done." />
+    <MESSAGE value="API doc is done." />
+    <option name="LAST_COMMIT_MESSAGE" value="API doc is done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

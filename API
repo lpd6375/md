@@ -98,7 +98,7 @@
 >>
 >>校区ID、校区名称、校区编号
 >
->GET http://host/CampusInfo/getcampusbasicinfo?campus_id=campus_id
+>GET http://host/CampusInfo/getinfo?campus_id=campus_id
 >
 >返回结果:
 >>
